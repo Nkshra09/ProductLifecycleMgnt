@@ -76,11 +76,7 @@
                                     Settings <i class="fas fa-angle-down"></i>
                                 </span>
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Profile</a>
-                                <a class="dropdown-item" href="#">Billing</a>
-                                <a class="dropdown-item" href="#">Customize</a>
-                            </div>
+                            
                         </li>
                     </ul>
                     <ul class="navbar-nav">
