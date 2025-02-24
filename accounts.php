@@ -44,7 +44,7 @@
             <ul class="navbar-nav mx-auto h-100">
               <li class="nav-item">
                 <a class="nav-link" href="index.html">
-                  <i class="fas fa-tachometer-alt"></i> Dashboard
+                  <i class="fas fa-tachometer-alt"></i> Home
                   <span class="sr-only">(current)</span>
                 </a>
               </li>
@@ -73,10 +73,7 @@
                 </a>
               </li>
 
-              <li class="nav-item">
-                <a class="nav-link active" href="accounts.php">
-                  <i class="far fa-user"></i> Accounts
-                </a>
+             
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -91,11 +88,7 @@
                   <i class="fas fa-cog"></i>
                   <span> Settings <i class="fas fa-angle-down"></i> </span>
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Profile</a>
-                  <a class="dropdown-item" href="#">Billing</a>
-                  <a class="dropdown-item" href="#">Customize</a>
-                </div>
+                
               </li>
             </ul>
             <ul class="navbar-nav">
@@ -108,42 +101,11 @@
           </div>
         </div>
       </nav>
-      <div class="container mt-5">
-        <div class="row tm-content-row">
-          <div class="col-12 tm-block-col">
-            <div class="tm-bg-primary-dark tm-block tm-block-h-auto">
-              <h2 class="tm-block-title">List of Accounts</h2>
-              <p class="text-white">Accounts</p>
-              <select class="custom-select">
-                <option value="0">Select account</option>
-                <option value="1">Admin</option>
-                <option value="2">Editor</option>
-                <option value="3">Merchant</option>
-                <option value="4">Customer</option>
-              </select>
-            </div>
-          </div>
-        </div>
+     
         <!-- row -->
         <div class="row tm-content-row">
           <div class="tm-block-col tm-col-avatar">
-            <div class="tm-bg-primary-dark tm-block tm-block-avatar">
-              <h2 class="tm-block-title">Change Avatar</h2>
-              <div class="tm-avatar-container">
-                <img
-                  src="..static/img/avatar.png"
-                  alt="Avatar"
-                  class="tm-avatar img-fluid mb-4"
-                />
-                <a href="#" class="tm-avatar-delete-link">
-                  <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                </a>
-              </div>
-              <button class="btn btn-primary btn-block text-uppercase">
-                Upload New Photo
-              </button>
-            </div>
-          </div>
+           
           <div class="tm-block-col tm-col-account-settings">
             <div class="tm-bg-primary-dark tm-block tm-block-settings">
               <h2 class="tm-block-title">Account Settings</h2>
@@ -214,6 +176,7 @@
           </div>
         </div>
       </div>
+	    
       <footer class="tm-footer row tm-mt-small">
         <div class="col-12 font-weight-light">
           <p class="text-center text-white mb-0 px-4 small">
