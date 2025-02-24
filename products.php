@@ -43,7 +43,7 @@
           <ul class="navbar-nav mx-auto h-100">
             <li class="nav-item">
               <a class="nav-link" href="index.html">
-                <i class="fas fa-tachometer-alt"></i> Dashboard
+                <i class="fas fa-tachometer-alt"></i> Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
@@ -71,11 +71,7 @@
               </a>
             </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="accounts.php">
-                <i class="far fa-user"></i> Accounts
-              </a>
-            </li>
+           
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -88,11 +84,7 @@
                 <i class="fas fa-cog"></i>
                 <span> Settings <i class="fas fa-angle-down"></i> </span>
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Profile</a>
-                <a class="dropdown-item" href="#">Billing</a>
-                <a class="dropdown-item" href="#">Customize</a>
-              </div>
+              
             </li>
           </ul>
           <ul class="navbar-nav">
@@ -312,54 +304,7 @@
                       </a>
                     </td>
                   </tr>
-                  <tr>
-                    <td class="tm-product-name">Product Category 6</td>
-                    <td class="text-center">
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="tm-product-name">Product Category 7</td>
-                    <td class="text-center">
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="tm-product-name">Product Category 8</td>
-                    <td class="text-center">
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="tm-product-name">Product Category 9</td>
-                    <td class="text-center">
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="tm-product-name">Product Category 10</td>
-                    <td class="text-center">
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="tm-product-name">Product Category 11</td>
-                    <td class="text-center">
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                  </tr>
+                 
                 </tbody>
               </table>
             </div>
