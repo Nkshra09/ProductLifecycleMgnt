@@ -4,7 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Product Expiry Checker</title>
-  <link rel="stylesheet" href="..static/css/expiry.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+    <!-- https://fonts.google.com/specimen/Roboto -->
+    <link rel="stylesheet" href="/ProductLifecycleMgnt/fontawesome.min.css">
+    <!-- https://fontawesome.com/ -->
+    <link rel="stylesheet" href="/ProductLifecycleMgnt/bootstrap.min.css">
+    <!-- https://getbootstrap.com/ -->
+    <link rel="stylesheet" href="/ProductLifecycleMgnt/templatemo-style.css">
+    <link rel="stylesheet" href="/ProductLifecycleMgnt/expiry.css">
 </head>
 <body>
   <div class="container">
