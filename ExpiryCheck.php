@@ -50,7 +50,7 @@
           <li class="nav-item dropdown">
             <a class="nav-link active" href="ExpiryCheck.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="fas fa-cog"></i>
-              <span> Settings <i class="fas fa-angle-down"></i> </span>
+              <span> Expiry Status <i class="fas fa-angle-down"></i> </span>
             </a>
           </li>
         </ul>
