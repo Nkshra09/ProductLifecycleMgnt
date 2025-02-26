@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/ProductLifecycleMgnt/bootstrap.min.css">
     <!-- https://getbootstrap.com/ -->
     <link rel="stylesheet" href="/ProductLifecycleMgnt/templatemo-style.css">
-    <link rel="stylesheet" href="/ProductLifecycleMgnt/expiry.css">
+   <!-- <link rel="stylesheet" href="/ProductLifecycleMgnt/expiry.css"> -->
 </head>
   <body id="reportsPage">
   <nav class="navbar navbar-expand-xl">
@@ -69,8 +69,8 @@
     <div class="row tm-content-row">
       <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8 tm-block-col">
         <div class="tm-bg-primary
-<body>
-  <div class="container">
+
+  
     <h1>Product Expiry Checker</h1>
     <p>Please enter the product name and expiry date:</p>
 
