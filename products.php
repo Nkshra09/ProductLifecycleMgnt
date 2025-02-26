@@ -131,7 +131,7 @@
                     echo "<td class='tm-product-name'>" . $row["ProductName"] . "</td>";
                     echo "<td>" . $row["Price"] . "</td>";
                     echo "<td>" . $row["Quantity"] . "</td>";
-                    echo "<td>" . $row["DateoOfMFG"] . "</td>";
+                    echo "<td>" . $row["DateOfMFG"] . "</td>";
                     echo "<td>" . $row["DateOfExp"] . "</td>";
                     echo "<td><a href='#' class='tm-product-delete-link'><i class='far fa-trash-alt tm-product-delete-icon'></i></a></td>";
                     echo "</tr>";
