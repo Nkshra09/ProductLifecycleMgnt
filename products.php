@@ -106,13 +106,13 @@
               <table class="table table-hover tm-table-small tm-product-table">
                 <thead>
                   <tr>
-                    <th scope="col">&nbsp;</th>
+                   <!-- <th scope="col">&nbsp;</th>  -->
                     <th scope="col">PRODUCT NAME</th>
                     <th scope="col">UNIT SOLD</th>
                     <th scope="col">IN STOCK</th>
 		    <th scope="col">Date Of MFG</th>
                     <th scope="col">EXPIRE DATE</th>
-                    <th scope="col">&nbsp;</th>
+                    <!-- <th scope="col">&nbsp;</th>  -->
                   </tr>
                 </thead>
                 <tbody>
