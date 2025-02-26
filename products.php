@@ -82,7 +82,7 @@
                 aria-haspopup="true"
                 aria-expanded="false">
                 <i class="fas fa-cog"></i>
-                <span> Settings <i class="fas fa-angle-down"></i> </span>
+                <span> Expiry Status <i class="fas fa-angle-down"></i> </span>
               </a>
               
             </li>
