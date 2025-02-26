@@ -111,7 +111,7 @@
                         </table>
                     </div>
                 </div>
-                <a href="add-product.html" class="btn btn-primary btn-block text-uppercase mb-3">Add new product</a>
+                <a href="add-product.php" class="btn btn-primary btn-block text-uppercase mb-3">Add new product</a>
                 <button class="btn btn-primary btn-block text-uppercase">Delete selected products</button>
             </div>
             <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 tm-block-col">
