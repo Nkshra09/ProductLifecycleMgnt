@@ -10,11 +10,11 @@
       href="https://fonts.googleapis.com/css?family=Roboto:400,700"
     />
     <!-- https://fonts.google.com/specimen/Roboto -->
-    <link rel="stylesheet" href="/ProductLifecycleMgnt//css/fontawesome.min.css" />
+    <link rel="stylesheet" href="/ProductLifecycleMgnt/fontawesome.min.css" />
     <!-- https://fontawesome.com/ -->
-    <link rel="stylesheet" href="/ProductLifecycleMgnt//css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/ProductLifecycleMgnt/bootstrap.min.css" />
     <!-- https://getbootstrap.com/ -->
-    <link rel="stylesheet" href="/ProductLifecycleMgnt//css/templatemo-style.css">
+    <link rel="stylesheet" href="/ProductLifecycleMgnt/templatemo-style.css">
     <!--
 	Product Admin CSS Template
 	https://templatemo.com/tm-524-product-admin
@@ -188,9 +188,9 @@
       </footer>
     </div>
 
-    <script src="/ProductLifecycleMgnt//js/jquery-3.3.1.min.js"></script>
+    <script src="/ProductLifecycleMgnt/jquery-3.3.1.min.js"></script>
     <!-- https://jquery.com/download/ -->
-    <script src="/ProductLifecycleMgnt//js/bootstrap.min.js"></script>
+    <script src="/ProductLifecycleMgnt/bootstrap.min.js"></script>
     <!-- https://getbootstrap.com/ -->
   </body>
 </html>
