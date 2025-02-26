@@ -34,7 +34,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto h-100">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">
+                            <a class="nav-link active" href="index.php">
                                 <i class="fas fa-tachometer-alt"></i>
                                 Home
                                 <span class="sr-only">(current)</span>
@@ -68,7 +68,7 @@
                                 aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-cog"></i>
                                 <span>
-                                    Settings <i class="fas fa-angle-down"></i>
+                                    Expiry Status <i class="fas fa-angle-down"></i>
                                 </span>
                             </a>
                             
