@@ -22,12 +22,6 @@
 	https://templatemo.com/tm-524-product-admin
 	-->
   </head>
- <?php
-	 include 'dashboard.php';
-	// Fetch product data
-     $sql = "SELECT * FROM product";
-     $result = $conn->query($sql); 
- ?>
   <body id="reportsPage">
     <nav class="navbar navbar-expand-xl">
       <div class="container h-100">
@@ -122,6 +116,12 @@
                   </tr>
                 </thead>
                 <tbody>
+ <?php
+	 include 'dashboard.php';
+	// Fetch product data
+     $sql = "SELECT * FROM product";
+     $result = $conn->query($sql); 
+ ?>
                  <?php
                 if ($result->num_rows > 0) {
                   // Output data of each row
