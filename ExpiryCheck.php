@@ -43,12 +43,12 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="products.php">
+            <a class="nav-link dropdown-toggle" href="products.php">
               <i class="fas fa-shopping-cart"></i> Products
             </a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="ExpiryCheck.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link active" href="ExpiryCheck.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="fas fa-cog"></i>
               <span> Settings <i class="fas fa-angle-down"></i> </span>
             </a>
