@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto:400,700"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- https://fonts.google.com/specimen/Roboto -->
     <link rel="stylesheet" href="/ProductLifecycleMgnt/fontawesome.min.css" />
     <!-- https://fontawesome.com/ -->
