@@ -23,7 +23,7 @@
 	-->
   </head>
  <php>
-	 include('dashboard.php');
+	 include 'dashboard.php';
 	// Fetch product data
     $sql = "SELECT * FROM product";
     $result = $conn->query($sql); 
