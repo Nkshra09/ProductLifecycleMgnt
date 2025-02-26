@@ -10,11 +10,11 @@
       href="https://fonts.googleapis.com/css?family=Roboto:400,700"
     />
     <!-- https://fonts.google.com/specimen/Roboto -->
-    <link rel="stylesheet" href="..static/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="/ProductLifecycleMgnt/fontawesome.min.css" />
     <!-- https://fontawesome.com/ -->
-    <link rel="stylesheet" href="..static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/ProductLifecycleMgnt/bootstrap.min.css" />
     <!-- https://getbootstrap.com/ -->
-    <link rel="stylesheet" href="..static/css/templatemo-style.css">
+    <link rel="stylesheet" href="/ProductLifecycleMgnt/templatemo-style.css">
     <!--
 	Product Admin CSS Template
 	https://templatemo.com/tm-524-product-admin
@@ -24,7 +24,7 @@
   <body id="reportsPage">
     <nav class="navbar navbar-expand-xl">
       <div class="container h-100">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="index.php">
           <h1 class="tm-site-title mb-0">Product Admin</h1>
         </a>
         <button
@@ -42,7 +42,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto h-100">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">
+              <a class="nav-link" href="index.php">
                 <i class="fas fa-tachometer-alt"></i> Home
                 <span class="sr-only">(current)</span>
               </a>
@@ -66,7 +66,7 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="products.html">
+              <a class="nav-link active" href="products.php">
                 <i class="fas fa-shopping-cart"></i> Products
               </a>
             </li>
@@ -89,7 +89,7 @@
           </ul>
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link d-block" href="login.html">
+              <a class="nav-link d-block" href="login.php">
                 Admin, <b>Logout</b>
               </a>
             </li>
@@ -326,9 +326,9 @@
       </div>
     </footer>
 
-    <script src="..static/js/jquery-3.3.1.min.js"></script>
+    <script src="/ProductLifecycleMgnt/jquery-3.3.1.min.js"></script>
     <!-- https://jquery.com/download/ -->
-    <script src="..static/js/bootstrap.min.js"></script>
+    <script src="/ProductLifecycleMgnt/bootstrap.min.js"></script>
     <!-- https://getbootstrap.com/ -->
     <script>
       $(function() {
