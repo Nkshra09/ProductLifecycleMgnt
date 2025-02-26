@@ -10,13 +10,13 @@
       href="..static/fonts.googleapis.com/css?family=Roboto:400,700"
     />
     <!-- https://fonts.google.com/specimen/Roboto -->
-    <link rel="stylesheet" href="..static/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="/ProductLifecycleMgnt/fontawesome.min.css" />
     <!-- https://fontawesome.com/ -->
-    <link rel="stylesheet" href="..static/jquery-ui-datepicker/jquery-ui.min.css" type="text/css" />
+    <link rel="stylesheet" href="/ProductLifecycleMgnt/jquery-ui-datepicker/jquery-ui.min.css" type="text/css" />
     <!-- http://api.jqueryui.com/datepicker/ -->
-    <link rel="stylesheet" href="..static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/ProductLifecycleMgnt/bootstrap.min.css" />
     <!-- https://getbootstrap.com/ -->
-    <link rel="stylesheet" href="..static/css/templatemo-style.css">
+    <link rel="stylesheet" href="/ProductLifecycleMgnt/templatemo-style.css">
     <!--
 	Product Admin CSS Template
 	https://templatemo.com/tm-524-product-admin
@@ -212,11 +212,11 @@
         </div>
     </footer> 
 
-    <script src="..static/js/jquery-3.3.1.min.js"></script>
+    <script src="/ProductLifecycleMgnt/jquery-3.3.1.min.js"></script>
     <!-- https://jquery.com/download/ -->
-    <script src="..static/jquery-ui-datepicker/jquery-ui.min.js"></script>
+    <script src="/ProductLifecycleMgnt/jquery-ui-datepicker/jquery-ui.min.js"></script>
     <!-- https://jqueryui.com/download/ -->
-    <script src="..static/js/bootstrap.min.js"></script>
+    <script src="/ProductLifecycleMgnt/bootstrap.min.js"></script>
     <!-- https://getbootstrap.com/ -->
     
   </body>
