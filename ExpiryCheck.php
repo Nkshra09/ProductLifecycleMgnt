@@ -25,7 +25,7 @@
       <label for="expiryDate">Expiry Date:</label>
       <input type="date" id="expiryDate" required>
 
-      <button onclick="addProduct()">Add Product</button>
+     <!-- <button onclick="addProduct()">Add Product</button> -->
     </div>
 
     <h2>Products List</h2>
@@ -33,9 +33,9 @@
 
     <button onclick="checkExpiries()">Check Expiry Dates</button>
   </div>
-   <a href="index.html">Back</a>
+   <a href="index.php">Back</a>
   <?php
-include 'dashboard.html';
+include 'dashboard.php';
 
 $sql = "SELECT ProductID, ProductName, DateOfExp FROM product";
 $result = $conn->query($sql);
@@ -51,6 +51,14 @@ if ($result->num_rows > 0) {
 
 $conn->close();
 ?>
-
+<script src="..static/js/jquery-3.3.1.min.js"></script>
+    <!-- https://jquery.com/download/ -->
+    <script src="/ProductLifecycleMgnt/moment.min.js"></script>
+    <!-- https://momentjs.com/ -->
+    <script src="/ProductLifecycleMgnt/Chart.min.js"></script>
+    <!-- http://www.chartjs.org/docs/latest/ -->
+    <script src="/ProductLifecycleMgnt/bootstrap.min.js"></script>
+    <!-- https://getbootstrap.com/ -->
+    <script src="/ProductLifecycleMgnt/tooplate-scripts.js"></script>
 </body>
 </html>
