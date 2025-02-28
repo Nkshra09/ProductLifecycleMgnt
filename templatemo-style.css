@@ -202,7 +202,7 @@ button:focus {
   font-size: 90%;
 }
 .table {
-  background-color: #50697f;
+  background: linear-gradient(to right,rgb(106, 156, 207),rgb(111, 106, 129));
   color: #fff;
   font-size: 85%;
   margin-bottom: 0;
