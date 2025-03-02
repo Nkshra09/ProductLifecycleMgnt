@@ -10,7 +10,33 @@ html {
   font-size: 16px;
   overflow-x: hidden;
 }
+expirybody {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  background-image: url('/ProductLifecycleMgnt/bg3.jpg');
+      background-repeat: no-repeat;
+      background-size: cover; 
+      overflow-x: hidden;
+}
 body {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  background: linear-gradient(to right,rgb(94, 163, 231),rgb(208, 89, 133));}
+
+
+.indexBody {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  background-image: url('/ProductLifecycleMgnt/bg4.jpg');
+      background-repeat: no-repeat;
+      background-size: cover; 
+      overflow-x: hidden;
+}
+.loginBody {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  background-image: url('/ProductLifecycleMgnt/background2.jpg');
+      background-repeat: no-repeat;
+      background-size: cover; 
+      overflow-x: hidden;
+}
+.productBody {
   font-family: Roboto, Helvetica, Arial, sans-serif;
   background-image: url('/ProductLifecycleMgnt/bg3.jpg');
       background-repeat: no-repeat;
