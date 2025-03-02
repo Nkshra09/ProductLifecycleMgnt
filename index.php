@@ -20,7 +20,7 @@
 	-->
 </head>
 
-<body id="reportsPage">
+<body id="reportsPage" class="indexBody">
     <div class="" id="home">
         <nav class="navbar navbar-expand-xl">
             <div class="container h-100">
