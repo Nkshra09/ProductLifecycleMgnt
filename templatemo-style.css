@@ -12,7 +12,7 @@ html {
 }
 body {
   font-family: Roboto, Helvetica, Arial, sans-serif;
-  background: linear-gradient(to right,rgb(106, 128, 207),rgb(244, 106, 129));
+  background: linear-gradient(to top left,rgb(241, 58, 58),rgb(141, 221, 141),rgb(223, 11, 11)) ;
   overflow-x: hidden;
 }
 a {
