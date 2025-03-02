@@ -12,11 +12,10 @@ html {
 }
 body {
   font-family: Roboto, Helvetica, Arial, sans-serif;
-  background-image: url('C:/xampp/htdocs/ProductLifecycleMgnt/bg3.jpg');
-      background-repeat: no-repeat; /* Prevents the image from repeating */
-      background-size: cover; /* Ensures the image covers the entire background */
-      background-position: 
-  overflow-x: hidden;
+  background-image: url('/ProductLifecycleMgnt/bg3.jpg');
+      background-repeat: no-repeat;
+      background-size: cover; 
+      overflow-x: hidden;
 }
 a {
   transition: all 0.3s ease;
