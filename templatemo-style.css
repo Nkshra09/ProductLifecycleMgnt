@@ -184,7 +184,7 @@ button:focus {
 }
 .tm-notification-item {
   padding: 15px;
-  background-color: #4e657a;
+  background: linear-gradient(to top left,rgb(241, 58, 58),rgb(141, 221, 141),rgb(223, 11, 11)) ;
   color: #fff;
   font-size: 95%;
   margin-bottom: 15px;
@@ -202,7 +202,7 @@ button:focus {
   font-size: 90%;
 }
 .table {
-  background: linear-gradient(to right,rgb(106, 156, 207),rgb(111, 106, 129));
+  background: linear-gradient(to right,rgb(94, 163, 231),rgb(208, 89, 133));
   color: #fff;
   font-size: 85%;
   margin-bottom: 0;
