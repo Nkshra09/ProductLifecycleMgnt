@@ -12,7 +12,10 @@ html {
 }
 body {
   font-family: Roboto, Helvetica, Arial, sans-serif;
-  background: linear-gradient(to top left,rgb(241, 58, 58),rgb(141, 221, 141),rgb(223, 11, 11)) ;
+  background-image: url('C:/xampp/htdocs/ProductLifecycleMgnt/bg3.jpg');
+      background-repeat: no-repeat; /* Prevents the image from repeating */
+      background-size: cover; /* Ensures the image covers the entire background */
+      background-position: 
   overflow-x: hidden;
 }
 a {
