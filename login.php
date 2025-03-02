@@ -45,7 +45,7 @@
             <ul class="navbar-nav mx-auto h-100">
               <li class="nav-item">
                 <a class="nav-link" href="index.php">
-                  <i class="fas fa-tachometer-alt"></i> Dashboard
+                  <i class="fas fa-tachometer-alt"></i> Home
                   <span class="sr-only">(current)</span>
                 </a>
               </li>
@@ -78,7 +78,7 @@
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
-                  href="#"
+                  href="ExpiryCheck.php"
                   id="navbarDropdown"
                   role="button"
                   data-toggle="dropdown"
