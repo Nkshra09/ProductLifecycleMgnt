@@ -21,7 +21,9 @@ body {
   font-family: Roboto, Helvetica, Arial, sans-serif;
   background: linear-gradient(to right,rgb(94, 163, 231),rgb(208, 89, 133));}
 
-
+.expiryBody {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  background: (to left,rgb(112, 199, 119),hsla(72, 86%, 54%, 0.624));}
 .indexBody {
   font-family: Roboto, Helvetica, Arial, sans-serif;
   background-image: url('/ProductLifecycleMgnt/bg4.jpg');
