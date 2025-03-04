@@ -69,7 +69,7 @@ button:focus {
 }
 .navbar {
   height: 100px;
-  background-color: #567086;
+  background: linear-gradient(to right,rgb(94, 163, 231),rgb(208, 89, 133));
   padding: 0;
 }
 .navbar .container {
