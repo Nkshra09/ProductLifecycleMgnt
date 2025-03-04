@@ -22,7 +22,7 @@
 	-->
   </head>
 
-  <body>
+  <body class="loginBody">
     <div>
       <nav class="navbar navbar-expand-xl">
         <div class="container h-100">
