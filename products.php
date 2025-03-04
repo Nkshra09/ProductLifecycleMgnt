@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="/ProductLifecycleMgnt/templatemo-style.css">
     <!-- Product Admin CSS Template https://templatemo.com/tm-524-product-admin -->
 </head>
-<body id="reportsPage">
+<body id="reportsPage" class="productBody">
     <nav class="navbar navbar-expand-xl">
         <div class="container h-100">
             <a class="navbar-brand" href="index.php">
