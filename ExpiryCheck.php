@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="/ProductLifecycleMgnt/templatemo-style.css">
    <!-- <link rel="stylesheet" href="/ProductLifecycleMgnt/expiry.css"> -->
 </head>
-  <body id="reportsPage">
+  <body id="reportsPage" class="expiryBody">
   <nav class="navbar navbar-expand-xl">
     <div class="container h-100">
       <a class="navbar-brand" href="index.php">
