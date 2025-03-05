@@ -279,20 +279,12 @@
             </div>
         </footer>
     </div>
-<<<<<<< Updated upstream
-<!--  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script> -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script> -->
-<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
-<!-- <script src="/ProductLifecycleMgnt/tooplate-scripts.js"></script> -->
-=======
- <script src="/ProductLifecycleMgnt/jquery-3.3.1.min.js"></script>
-<script src="/ProductLifecycleMgnt/moment.min.js"></script>
-<script src="/ProductLifecycleMgnt/Chart.min.js"></script>
-<script src="/ProductLifecycleMgnt/bootstrap.min.js"></script>
-<script src="/ProductLifecycleMgnt/tooplate-scripts.js"></script>
->>>>>>> Stashed changes
 
+ <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="/ProductLifecycleMgnt/tooplate-scripts.js"></script>
     <script>
         Chart.defaults.global.defaultFontColor = 'white';
         let ctxLine,
