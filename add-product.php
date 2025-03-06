@@ -241,7 +241,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $quantity = $_POST['quantity'];
 
     // Prepare an SQL statement to insert data
-    $stmt = $conn->prepare("INSERT INTO product (pname, category, quantity, DateOfMFG, DateOfExp) VALUES (?, ?, ?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO product1 (pname, category, quantity, DateOfMFG, DateOfExp) VALUES (?, ?, ?, ?, ?)");
     $stmt->bind_param("ssssi", $productName, $category, $quantity, $dateOfMFG, $dateOfExp);
 
     // Execute the statement
