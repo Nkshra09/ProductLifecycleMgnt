@@ -88,15 +88,15 @@
                                 <?php
                                 include 'dashboard.php';
                                 // Fetch product data
-                                $sql = "SELECT * FROM product";
+                                $sql = "SELECT * FROM product1";
                                 $result = $conn->query($sql);
                                 if ($result->num_rows > 0) {
                                     while($row = $result->fetch_assoc()) {
                                         echo "<tr>";
                                         echo "<th scope='row'><input type='checkbox' /></th>";
-                                        echo "<td class='tm-product-name'>" . htmlspecialchars($row["ProductName"]) . "</td>";
-                                        echo "<td>" . htmlspecialchars($row["Price"]) . "</td>";
-                                        echo "<td>" . htmlspecialchars($row["Quantity"]) . "</td>";
+                                        echo "<td class='tm-product-name'>" . htmlspecialchars($row["pname"]) . "</td>";
+                                        echo "<td>" . htmlspecialchars($row["price"]) . "</td>";
+                                        echo "<td>" . htmlspecialchars($row["quantity"]) . "</td>";
                                         echo "<td>" . htmlspecialchars($row["DateOfMFG"]) . "</td>";
                                         echo "<td>" . htmlspecialchars($row["DateOfExp"]) . "</td>";
                                         echo "<td><a href='#' class='tm-product-delete-link'><i class='far fa-trash-alt tm-product-delete-icon'></i></a></td>";
