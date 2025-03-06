@@ -230,6 +230,7 @@ include 'dashboard.php';
  // Define a function to display errors
 function showError($message) {
     echo "<div style='color: red; font-weight: bold; margin: 20px 0;'>Error: $message</div>";
+}
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get form data
