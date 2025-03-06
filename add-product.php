@@ -253,8 +253,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Execute the statement
     if ($stmt->execute()) {
-       header("Location: products.php");
-        exit();
+       // header("Location: products.php");
+       //  exit();
+	echo "succeesss";
     } else {
        showError($stmt->error);
     }
