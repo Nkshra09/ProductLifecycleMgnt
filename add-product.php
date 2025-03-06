@@ -114,7 +114,7 @@
               <div class="col-xl-6 col-lg-6 col-md-12">
 
 <!-- 		Here insertion code starts       -->
-                <form action="products.php" method="post" class="tm-edit-product-form">
+                <form action="add-product.php" method="post" class="tm-edit-product-form">
                   <div class="form-group mb-3">
                     <label
                       for="name"
