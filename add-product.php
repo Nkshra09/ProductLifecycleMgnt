@@ -122,7 +122,7 @@
                     </label>
                     <input
                       id="name"
-                      name="ProductName"
+                      name="pname"
                       type="text"
                       class="form-control validate"
                       required
@@ -134,7 +134,7 @@
                       for="category"
                       >Category</label
                     >
-                    <select
+                    <select name="category"
                       class="custom-select tm-select-accounts"
                       id="category"
                     >
@@ -175,7 +175,7 @@
                           </label>
                           <input
                             id="stock"
-                            name="Quantity"
+                            name="quantity"
                             type="text"
                             class="form-control validate"
                             required
