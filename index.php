@@ -93,13 +93,13 @@
                 </div>
             </div>
             <!-- row -->
-            <div class="row tm-content-row">
+<!--             <div class="row tm-content-row">
                 <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-block-col">
                     <div class="tm-bg-primary-dark tm-block">
                         <h2 class="tm-block-title">Latest Hits</h2>
                         <canvas id="lineChart"></canvas>
                     </div>
-                </div>
+                </div> -->
                 <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-block-col">
                     <div class="tm-bg-primary-dark tm-block">
                         <h2 class="tm-block-title">Performance</h2>
@@ -280,7 +280,7 @@
         </footer>
     </div>
 
- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
