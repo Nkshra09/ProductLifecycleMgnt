@@ -240,6 +240,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $dateOfExp = $_POST['DateOfExp'];
     $quantity = $_POST['quantity'];
 
+    // Print form data for debugging
+    echo "Product Name: $productName<br>";
+    echo "Category: $category<br>";
+    echo "Date of MFG: $dateOfMFG<br>";
+    echo "Date of Exp: $dateOfExp<br>";
+    echo "Quantity: $quantity<br>";
+
     // Prepare an SQL statement to insert data
     $stmt = $conn->prepare("INSERT INTO product1 (pname, category, quantity, DateOfMFG, DateOfExp) VALUES (?, ?, ?, ?, ?)");
     $stmt->bind_param("ssssi", $productName, $category, $quantity, $dateOfMFG, $dateOfExp);
