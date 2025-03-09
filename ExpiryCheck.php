@@ -74,53 +74,52 @@
 
   <div class="container mt-5">
         <h1>Product Expiry Checker</h1>
-        <p>Please enter the product name and expiry date:</p>
+<!--         <p>Please enter the product name and expiry date:</p> -->
 
-        <form method="POST" action="">
-            <div class="form-group">
-                <label for="productName">Product Name:</label>
-                <input type="text" id="productName" name="pname" class="form-control" placeholder="Enter product name" required>
-            </div>
-            <div class="form-group">
-                <label for="expiryDate">Expiry Date:</label>
-                <input type="date" id="expiryDate" name="expiryDate" class="form-control" required>
-            </div>
-            <button type="submit" class="btn btn-primary">Add Product</button>
-        </form>
+        <table class="table table-hover tm-table-small tm-product-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>  
+                                    <th scope="col">PRODUCT NAME</th>
+                                    <th scope="col">UNIT SOLD</th>
+                                    <th scope="col">IN STOCK</th>
+                                    <th scope="col">Date Of MFG</th>
+                                    <th scope="col">EXPIRE DATE</th>
+                                    <th scope="col"></th>  
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php
+                                include 'dashboard.php';
+                                // Fetch product data
+                                $sql = "SELECT * FROM product1";
+                                $result = $conn->query($sql);
+                                if ($result->num_rows > 0) {
+                                    while($row = $result->fetch_assoc()) {
+                                        $isExpired = (new DateTime($row['DateOfExp']) < new DateTime()) ? "Expired" : "Valid";
+                                        $statusClass = ($isExpired == "Expired") ? "expired" : "valid";
+                                        echo "<tr>";
+                                        echo "<th scope='row'><input type='checkbox' /></th>";
+                                        echo "<td class='tm-product-name'>" . htmlspecialchars($row["pname"]) . "</td>";
+                                        echo "<td>" . htmlspecialchars($row["price"]) . "</td>";
+                                        echo "<td>" . htmlspecialchars($row["quantity"]) . "</td>";
+                                        echo "<td>" . htmlspecialchars($row["DateOfMFG"]) . "</td>";
+                                        echo "<td>" . htmlspecialchars($row["DateOfExp"]) . "</td>";
+                                        echo "<td><a href='#' class='tm-product-delete-link'><i class='far fa-trash-alt tm-product-delete-icon'></i></a></td>";
+                                        echo "</tr>";
+                                    }
+                                } else {
+                                    echo "<tr><td colspan='7'>No products found</td></tr>";
+                                }
+                                $conn->close();
+                                ?>
+                            </tbody>
+                        </table>
 
-        <h2 class="mt-5">Product List</h2>
-        <ul class="list-group">
-            <?php
-            include 'dashboard.php';
+       
 
-            // Check if form is submitted
-            if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                $productName = $_POST['pname'];
-                $expiryDate = $_POST['expiryDate'];
 
-                // Insert the new product into the database
-                $stmt = $conn->prepare("INSERT INTO product (ProductName, DateOfExp) VALUES (?, ?)");
-                $stmt->bind_param("ss", $productName, $expiryDate);
-                $stmt->execute();
-                $stmt->close();
-            }
-
-            // Fetch products from the database
-            $sql = "SELECT ProductID, ProductName, DateOfExp FROM product";
-            $result = $conn->query($sql);
-
-            if ($result->num_rows > 0) {
-                while($row = $result->fetch_assoc()) {
-                    $isExpired = (new DateTime($row['DateOfExp']) < new DateTime()) ? "Expired" : "Valid";
-                    $statusClass = ($isExpired == "Expired") ? "expired" : "valid";
-                    echo "<li class='list-group-item'>{$row['ProductName']} - Expiry Date: {$row['DateOfExp']} <span class='$statusClass'>($isExpired)</span></li>";
-                }
-            } else {
-                echo "<li class='list-group-item'>No products found.</li>";
-            }
-
-            $conn->close();
-            ?>
+        
 <script src="..static/js/jquery-3.3.1.min.js"></script>
     <!-- https://jquery.com/download/ -->
     <script src="/ProductLifecycleMgnt/moment.min.js"></script>
