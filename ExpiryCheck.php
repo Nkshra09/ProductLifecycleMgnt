@@ -88,14 +88,14 @@
         <h1>Product Expiry Checker</h1>
 <!--         <p>Please enter the product name and expiry date:</p> -->
 
-        <table class="table ">
+        <table class="protable">
                             <thead>
                                 <tr>
                                     <th scope="col"></th>  
                                     <th scope="col">PRODUCT NAME</th>
                                     <th scope="col">UNIT SOLD</th>
                                     <th scope="col">IN STOCK</th>
-                                    <th scope="col">Date Of MFG</th>
+        
                                     <th scope="col">EXPIRE DATE</th>
                                     <th scope="col"></th>  
                                 </tr>
@@ -110,18 +110,22 @@
                                     while($row = $result->fetch_assoc()) {
                                         $isExpired = (new DateTime($row['DateOfExp']) < new DateTime()) ? "Expired" : "Valid";
                                         $statusClass = ($isExpired == "Expired") ? "expired" : "valid";
+                                        echo "<li class='list-group-item'>{$row['ProductName']} - Expiry Date: {$row['DateOfExp']} <span class='$statusClass'>($isExpired)</span></li>";
+        
                                         echo "<tr>";
                                         echo "<th scope='row'><input type='checkbox' /></th>";
                                         echo "<td class='tm-product-name'>" . htmlspecialchars($row["pname"]) . "</td>";
                                         echo "<td>" . htmlspecialchars($row["price"]) . "</td>";
                                         echo "<td>" . htmlspecialchars($row["quantity"]) . "</td>";
-                                        echo "<td>" . htmlspecialchars($row["DateOfMFG"]) . "</td>";
+                                        // echo "<td>" . htmlspecialchars($row["DateOfMFG"]) . "</td>";
                                         echo "<td>" . htmlspecialchars($row["DateOfExp"]) . "</td>";
                                         echo "<td><a href='#' class='tm-product-delete-link'><i class='far fa-trash-alt tm-product-delete-icon'></i></a></td>";
                                         echo "</tr>";
                                     }
                                 } else {
-                                    echo "<tr><td colspan='7'>No products found</td></tr>";
+                                    {
+                                   echo "<li class='list-group-item'>No products found.</li>";
+    
                                 }
                                 $conn->close();
                                 ?>
