@@ -123,7 +123,7 @@
                                         echo "</tr>";
                                     }
                                 } else {
-                                    {
+                                    
                                    echo "<li class='list-group-item'>No products found.</li>";
     
                                 }
