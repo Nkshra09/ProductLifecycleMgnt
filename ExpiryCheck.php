@@ -14,18 +14,57 @@
     <!-- https://getbootstrap.com/ -->
     <link rel="stylesheet" href="/ProductLifecycleMgnt/templatemo-style.css">
    <!-- <link rel="stylesheet" href="/ProductLifecycleMgnt/expiry.css"> -->
-  <style>
-    .expired {
-        color: red;
-        font-weight: bold;
-    }
-
-    .valid {
-        color: green;
-        font-weight: bold;
-    }
-</style>
-
+   <style>
+        .expirybody {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        .expired {
+            background-color: #f8d7da;
+        }
+        .valid {
+            background-color: #d4edda;
+        }
+        .highlight {
+            color: red;
+            font-weight: bold;
+        
+<script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const rows = document.querySelectorAll('table tbody tr');
+            rows.forEach(row => {
+                const expiryDate = new Date(row.getAttribute('data-expiry'));
+                const currentDate = new Date();
+                if (expiryDate < currentDate) {
+                    row.classList.add('expired');
+                } else {
+                    row.classList.add('valid');
+                }
+            });
+        });
+    </script>
 </head>
   <body id="reportsPage" class="expiryBody">
   <nav class="navbar navbar-expand-xl">
@@ -88,51 +127,43 @@
         <h1>Product Expiry Checker</h1>
 <!--         <p>Please enter the product name and expiry date:</p> -->
 
-        <table class="protable">
-                            <thead>
-                                <tr>
-                                    <th scope="col"></th>  
-                                    <th scope="col">PRODUCT NAME</th>
-                                    <th scope="col">UNIT SOLD</th>
-                                    <th scope="col">IN STOCK</th>
         
-                                    <th scope="col">EXPIRE DATE</th>
-                                    <th scope="col"></th>  
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php
-                                include 'dashboard.php';
-                                // Fetch product data
-                                $sql = "SELECT * FROM product1";
-                                $result = $conn->query($sql);
-                                if ($result->num_rows > 0) {
-                                    while($row = $result->fetch_assoc()) {
-                                        $isExpired = (new DateTime($row['DateOfExp']) < new DateTime()) ? "Expired" : "Valid";
-                                        $statusClass = ($isExpired == "Expired") ? "expired" : "valid";
-                                        echo "<li class='list-group-item'>{$row['ProductName']} - Expiry Date: {$row['DateOfExp']} <span class='$statusClass'>($isExpired)</span></li>";
-        
-                                        echo "<tr>";
-                                        echo "<th scope='row'><input type='checkbox' /></th>";
-                                        echo "<td class='tm-product-name'>" . htmlspecialchars($row["pname"]) . "</td>";
-                                        echo "<td>" . htmlspecialchars($row["price"]) . "</td>";
-                                        echo "<td>" . htmlspecialchars($row["quantity"]) . "</td>";
-                                        // echo "<td>" . htmlspecialchars($row["DateOfMFG"]) . "</td>";
-                                        echo "<td>" . htmlspecialchars($row["DateOfExp"]) . "</td>";
-                                        echo "<td><a href='#' class='tm-product-delete-link'><i class='far fa-trash-alt tm-product-delete-icon'></i></a></td>";
-                                        echo "</tr>";
-                                    }
-                                } else {
-                                    
-                                   echo "<li class='list-group-item'>No products found.</li>";
-    
-                                }
-                                $conn->close();
-                                ?>
-                            </tbody>
-                        </table>
+       <div class="container">
+        <h1>Product Details</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Unit Sold</th>
+                    <th>In Stock</th>
+                    <th>Date Of MFG</th>
+                    <th>Expire Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                include 'db.php';
+                $sql = "SELECT * FROM product1";
+                $result = $conn->query($sql);
 
-       
+                if ($result->num_rows > 0) {
+                    while($row = $result->fetch_assoc()) {
+                        $isExpired = (new DateTime($row['DateOfExp']) < new DateTime()) ? "Expired" : "Valid";
+                        echo "<tr data-expiry='" . htmlspecialchars($row["DateOfExp"]) . "'>";
+                        echo "<td>" . htmlspecialchars($row["pname"]) . "</td>";
+                        echo "<td>" . htmlspecialchars($row["price"]) . "</td>";
+                        echo "<td>" . htmlspecialchars($row["quantity"]) . "</td>";
+                        echo "<td>" . htmlspecialchars($row["DateOfMFG"]) . "</td>";
+                        echo "<td>" . htmlspecialchars($row["DateOfExp"]) . " <span class='highlight'>($isExpired)</span></td>";
+                        echo "</tr>";
+                    }
+                } else {
+                    echo "<tr><td colspan='5'>No products found</td></tr>";
+                }
+                $conn->close();
+                ?>
+            </tbody>
+        </table>
 
 
         
