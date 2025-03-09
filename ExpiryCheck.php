@@ -21,7 +21,7 @@
             margin: 0;
             padding: 0;
         }
-/*         .container { */
+         .container { 
             width: 80%;
             margin: 20px auto;
             background: #fff;
