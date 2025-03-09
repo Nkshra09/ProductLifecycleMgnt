@@ -21,7 +21,7 @@
             margin: 0;
             padding: 0;
         }
-        .container {
+/*         .container { */
             width: 80%;
             margin: 20px auto;
             background: #fff;
@@ -142,7 +142,7 @@
             </thead>
             <tbody>
                 <?php
-                include 'db.php';
+                include 'dashboard.php';
                 $sql = "SELECT * FROM product1";
                 $result = $conn->query($sql);
 
