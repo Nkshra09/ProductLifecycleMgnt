@@ -1,3 +1,38 @@
+<?php
+// Include the database connection file
+include 'dashboard.php';
+ // Define a function to display errors
+function showError($message) {
+    echo "<div style='color: red; font-weight: bold; margin: 20px 0;'>Error: $message</div>";
+}
+// Check if the form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Get form data
+    $productName = $_POST['pname'];
+    $category = $_POST['category'];
+    $dateOfMFG = $_POST['DateOfMFG'];
+    $dateOfExp = $_POST['DateOfExp'];
+    $quantity = $_POST['quantity'];
+
+    // Prepare an SQL statement to insert data
+    $stmt = $conn->prepare("INSERT INTO product1 (pname, category, quantity, DateOfMFG, DateOfExp) VALUES (?, ?, ?, ?, ?)");
+     $stmt->bind_param("ssiss", $productName, $category, $quantity, $dateOfMFG, $dateOfExp);
+
+    // Execute the statement
+    if ($stmt->execute()) {
+        header("Location: products.php");
+        exit();
+    } else {
+       showError($stmt->error);
+    }
+
+    // Close the statement and connection
+    $stmt->close();
+    $conn->close();
+}
+?>
+	    
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -224,37 +259,3 @@
     
   </body>
 </html>
-<?php
-// Include the database connection file
-include 'dashboard.php';
- // Define a function to display errors
-function showError($message) {
-    echo "<div style='color: red; font-weight: bold; margin: 20px 0;'>Error: $message</div>";
-}
-// Check if the form is submitted
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Get form data
-    $productName = $_POST['pname'];
-    $category = $_POST['category'];
-    $dateOfMFG = $_POST['DateOfMFG'];
-    $dateOfExp = $_POST['DateOfExp'];
-    $quantity = $_POST['quantity'];
-
-    // Prepare an SQL statement to insert data
-    $stmt = $conn->prepare("INSERT INTO product1 (pname, category, quantity, DateOfMFG, DateOfExp) VALUES (?, ?, ?, ?, ?)");
-     $stmt->bind_param("ssiss", $productName, $category, $quantity, $dateOfMFG, $dateOfExp);
-
-    // Execute the statement
-    if ($stmt->execute()) {
-        header("Location: products.php");
-        exit();
-    } else {
-       showError($stmt->error);
-    }
-
-    // Close the statement and connection
-    $stmt->close();
-    $conn->close();
-}
-?>
-	    
