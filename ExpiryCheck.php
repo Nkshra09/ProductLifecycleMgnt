@@ -15,20 +15,7 @@
     <link rel="stylesheet" href="/ProductLifecycleMgnt/templatemo-style.css">
     <link rel="stylesheet" href="/ProductLifecycleMgnt/style2.css">
    <!-- <link rel="stylesheet" href="/ProductLifecycleMgnt/expiry.css"> --> 
-/* <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const rows = document.querySelectorAll('table tbody tr');
-            rows.forEach(row => {
-                const expiryDate = new Date(row.getAttribute('data-expiry'));
-                const currentDate = new Date();
-                if (expiryDate < currentDate) {
-                    row.classList.add('expired');
-                } else {
-                    row.classList.add('valid');
-                }
-            });
-        });
-    </script> */
+ 
 </head>
   <body id="reportsPage" class="expirybody">
   <nav class="navbar navbar-expand-xl">
