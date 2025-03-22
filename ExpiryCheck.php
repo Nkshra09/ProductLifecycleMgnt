@@ -140,7 +140,7 @@
                     <th>Expire Date</th>
                 </tr>
             </thead>
-            <tbody>
+         <tbody>
 //                <?php
     //            include 'dashboard.php';
     //            $sql = "SELECT * FROM product1";
@@ -156,14 +156,14 @@
    //                     echo "<td>" . htmlspecialchars($row["DateOfMFG"]) . "</td>";
    //                     echo "<td>" . htmlspecialchars($row["DateOfExp"]) . " <span class='highlight'>($isExpired)</span></td>";
    //                     echo "</tr>";
-                    }
+      //              }
    //             } else {
  //                   echo "<tr><td colspan='5'>No products found</td></tr>";
-                }
+  //              }
   //              $conn->close();
   //              ?> 
-            </tbody>
-        </table>
+           </tbody>
+       </table>
 
 
         
