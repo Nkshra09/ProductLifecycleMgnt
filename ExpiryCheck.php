@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="/ProductLifecycleMgnt/templatemo-style.css">
    <!-- <link rel="stylesheet" href="/ProductLifecycleMgnt/expiry.css"> -->
    <style>
-        .expiryBbody {
+        .expiryNbody {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             margin: 0;
@@ -28,7 +28,7 @@
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         } */
-        h1 {
+/*         h1 {
             text-align: center;
         }
         table {
@@ -49,7 +49,7 @@
         }
         .highlight {
             color: red;
-            font-weight: bold;
+            font-weight: bold; */
         
 /* <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -66,7 +66,7 @@
         });
     </script> */
 </head>
-  <body id="reportsPage" class="expiryBbody">
+  <body id="reportsPage" class="expirybody">
   <nav class="navbar navbar-expand-xl">
     <div class="container h-100">
       <a class="navbar-brand" href="index.php">
