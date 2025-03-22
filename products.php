@@ -99,7 +99,7 @@
                                         echo "<td>" . htmlspecialchars($row["quantity"]) . "</td>";
                                         echo "<td>" . htmlspecialchars($row["DateOfMFG"]) . "</td>";
                                         echo "<td>" . htmlspecialchars($row["DateOfExp"]) . "</td>";
-                                       echo "<td><a href='delete-product.php?id=" . htmlspecialchars($row['id']) . "' class='tm-product-delete-link' 
+                                       echo "<td><a href='delete-product.php?pid=" . htmlspecialchars($row['pid']) . "' class='tm-product-delete-link' 
                                        onclick='return confirm(\"Are you sure you want to delete this product?\");'><i class='far fa-trash-alt tm-product-delete-icon'></i></a></td>";;
                                         echo "</tr>";
                                     }
