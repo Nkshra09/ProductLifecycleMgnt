@@ -15,19 +15,19 @@
     <link rel="stylesheet" href="/ProductLifecycleMgnt/templatemo-style.css">
    <!-- <link rel="stylesheet" href="/ProductLifecycleMgnt/expiry.css"> -->
    <style>
-        .expirybody {
+        .expiryBbody {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             margin: 0;
             padding: 0;
         }
-         .container { 
+/*          .container { 
             width: 80%;
             margin: 20px auto;
             background: #fff;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+        } */
         h1 {
             text-align: center;
         }
@@ -51,7 +51,7 @@
             color: red;
             font-weight: bold;
         
-<script>
+/* <script>
         document.addEventListener('DOMContentLoaded', function () {
             const rows = document.querySelectorAll('table tbody tr');
             rows.forEach(row => {
@@ -64,9 +64,9 @@
                 }
             });
         });
-    </script>
+    </script> */
 </head>
-  <body id="reportsPage" class="expiryBody">
+  <body id="reportsPage" class="expiryBbody">
   <nav class="navbar navbar-expand-xl">
     <div class="container h-100">
       <a class="navbar-brand" href="index.php">
@@ -141,27 +141,27 @@
                 </tr>
             </thead>
             <tbody>
-                <?php
-                include 'dashboard.php';
-                $sql = "SELECT * FROM product1";
-                $result = $conn->query($sql);
+//                <?php
+    //            include 'dashboard.php';
+    //            $sql = "SELECT * FROM product1";
+    //            $result = $conn->query($sql);
 
-                if ($result->num_rows > 0) {
-                    while($row = $result->fetch_assoc()) {
-                        $isExpired = (new DateTime($row['DateOfExp']) < new DateTime()) ? "Expired" : "Valid";
-                        echo "<tr data-expiry='" . htmlspecialchars($row["DateOfExp"]) . "'>";
-                        echo "<td>" . htmlspecialchars($row["pname"]) . "</td>";
-                        echo "<td>" . htmlspecialchars($row["price"]) . "</td>";
-                        echo "<td>" . htmlspecialchars($row["quantity"]) . "</td>";
-                        echo "<td>" . htmlspecialchars($row["DateOfMFG"]) . "</td>";
-                        echo "<td>" . htmlspecialchars($row["DateOfExp"]) . " <span class='highlight'>($isExpired)</span></td>";
-                        echo "</tr>";
+    //            if ($result->num_rows > 0) {
+     //               while($row = $result->fetch_assoc()) {
+   //                     $isExpired = (new DateTime($row['DateOfExp']) < new DateTime()) ? "Expired" : "Valid";
+     //                   echo "<tr data-expiry='" . htmlspecialchars($row["DateOfExp"]) . "'>";
+    //                    echo "<td>" . htmlspecialchars($row["pname"]) . "</td>";
+  //                      echo "<td>" . htmlspecialchars($row["price"]) . "</td>";
+  //                      echo "<td>" . htmlspecialchars($row["quantity"]) . "</td>";
+   //                     echo "<td>" . htmlspecialchars($row["DateOfMFG"]) . "</td>";
+   //                     echo "<td>" . htmlspecialchars($row["DateOfExp"]) . " <span class='highlight'>($isExpired)</span></td>";
+   //                     echo "</tr>";
                     }
-                } else {
-                    echo "<tr><td colspan='5'>No products found</td></tr>";
+   //             } else {
+ //                   echo "<tr><td colspan='5'>No products found</td></tr>";
                 }
-                $conn->close();
-                ?>
+  //              $conn->close();
+  //              ?> 
             </tbody>
         </table>
 
