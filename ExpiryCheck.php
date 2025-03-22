@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/ProductLifecycleMgnt/bootstrap.min.css">
     <!-- https://getbootstrap.com/ -->
     <link rel="stylesheet" href="/ProductLifecycleMgnt/templatemo-style.css">
+    <link rel="stylesheet" href="/ProductLifecycleMgnt/style2.css">
    <!-- <link rel="stylesheet" href="/ProductLifecycleMgnt/expiry.css"> --> 
 /* <script>
         document.addEventListener('DOMContentLoaded', function () {
