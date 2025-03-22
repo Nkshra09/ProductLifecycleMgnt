@@ -13,8 +13,7 @@
     <link rel="stylesheet" href="/ProductLifecycleMgnt/bootstrap.min.css">
     <!-- https://getbootstrap.com/ -->
     <link rel="stylesheet" href="/ProductLifecycleMgnt/templatemo-style.css">
-   <!-- <link rel="stylesheet" href="/ProductLifecycleMgnt/expiry.css"> -->
-   
+   <!-- <link rel="stylesheet" href="/ProductLifecycleMgnt/expiry.css"> --> 
 /* <script>
         document.addEventListener('DOMContentLoaded', function () {
             const rows = document.querySelectorAll('table tbody tr');
@@ -125,7 +124,7 @@
                    echo "<tr><td colspan='5'>No products found</td></tr>";
                 }
               $conn->close();
-  //              ?> 
+             ?> 
            </tbody>
        </table>
 
