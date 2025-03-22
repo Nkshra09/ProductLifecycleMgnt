@@ -1,0 +1,40 @@
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Removes double borders */
+    margin: 20px 0;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Table background color */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+thead tr {
+    background-color: #007bff; /* Header background */
+    color: #ffffff; /* Header text color */
+    text-align: left;
+}
+
+th, td {
+    padding: 12px 15px; /* Spacing inside cells */
+    border: 1px solid #ddd; /* Adds border between cells */
+    text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Alternating row color */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+tbody tr:hover {
+    background-color: #f0f8ff; /* Highlight row on hover */
+    cursor: pointer; /* Optional: makes rows feel clickable */
+}
+
+.highlight {
+    color: #dc3545; /* Highlight expired products in red */
+    font-weight: bold;
+}
