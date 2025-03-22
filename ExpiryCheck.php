@@ -14,13 +14,13 @@
     <!-- https://getbootstrap.com/ -->
     <link rel="stylesheet" href="/ProductLifecycleMgnt/templatemo-style.css">
    <!-- <link rel="stylesheet" href="/ProductLifecycleMgnt/expiry.css"> -->
-   <style>
-        .expiryNbody {
+   
+/*         .expiryNbody {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-        }
+        } */
 /*          .container { 
             width: 80%;
             margin: 20px auto;
@@ -141,26 +141,26 @@
                 </tr>
             </thead>
          <tbody>
-//                <?php
-    //            include 'dashboard.php';
-    //            $sql = "SELECT * FROM product1";
-    //            $result = $conn->query($sql);
+              <?php
+                include 'dashboard.php';
+               $sql = "SELECT * FROM product1";
+              $result = $conn->query($sql);
 
-    //            if ($result->num_rows > 0) {
-     //               while($row = $result->fetch_assoc()) {
-   //                     $isExpired = (new DateTime($row['DateOfExp']) < new DateTime()) ? "Expired" : "Valid";
-     //                   echo "<tr data-expiry='" . htmlspecialchars($row["DateOfExp"]) . "'>";
-    //                    echo "<td>" . htmlspecialchars($row["pname"]) . "</td>";
-  //                      echo "<td>" . htmlspecialchars($row["price"]) . "</td>";
-  //                      echo "<td>" . htmlspecialchars($row["quantity"]) . "</td>";
-   //                     echo "<td>" . htmlspecialchars($row["DateOfMFG"]) . "</td>";
-   //                     echo "<td>" . htmlspecialchars($row["DateOfExp"]) . " <span class='highlight'>($isExpired)</span></td>";
-   //                     echo "</tr>";
-      //              }
-   //             } else {
- //                   echo "<tr><td colspan='5'>No products found</td></tr>";
-  //              }
-  //              $conn->close();
+               if ($result->num_rows > 0) {
+                   while($row = $result->fetch_assoc()) {
+                     $isExpired = (new DateTime($row['DateOfExp']) < new DateTime()) ? "Expired" : "Valid";
+                        echo "<tr data-expiry='" . htmlspecialchars($row["DateOfExp"]) . "'>";
+                        echo "<td>" . htmlspecialchars($row["pname"]) . "</td>";
+                        echo "<td>" . htmlspecialchars($row["price"]) . "</td>";
+                        echo "<td>" . htmlspecialchars($row["quantity"]) . "</td>";
+                        echo "<td>" . htmlspecialchars($row["DateOfMFG"]) . "</td>";
+                        echo "<td>" . htmlspecialchars($row["DateOfExp"]) . " <span class='highlight'>($isExpired)</span></td>";
+                        echo "</tr>";
+                    }
+              } else {
+                   echo "<tr><td colspan='5'>No products found</td></tr>";
+                }
+              $conn->close();
   //              ?> 
            </tbody>
        </table>
