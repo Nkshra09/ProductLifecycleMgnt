@@ -1,3 +1,39 @@
+<?php
+session_start();
+$message = "";
+include('dashboard.php');
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    try {
+        $sql = "SELECT * FROM adminlogin WHERE username = ?";
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param("s", $username);
+        $stmt->execute();
+        $result = $stmt->get_result();
+
+        if ($result->num_rows > 0) {
+            $row = $result->fetch_assoc();
+            if ($password) {
+                $_SESSION['username'] = $username;
+                $message="login successfull";
+                header("Location: index.html");
+                exit;
+            } else {
+                $message = "Invalid password.";
+            }
+        } else {
+            $message = "Invalid username.";
+        }
+        // $stmt->close;
+     } catch (mysqli_sql_exception $e) {
+        $message = "Error: Could not perform the login operation. Please try again.";
+     }
+}
+$conn->close();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,8 +43,7 @@
     <title>Login Page - Product Admin Template</title>
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
-    />
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">	  
     <!-- https://fonts.google.com/specimen/Open+Sans -->
     <link rel="stylesheet" href="/ProductLifecycleMgnt/fontawesome.min.css" />
@@ -36,8 +71,7 @@
             data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+            aria-label="Toggle navigation" >
             <i class="fas fa-bars tm-nav-icon"></i>
           </button>
 
@@ -57,8 +91,7 @@
                   role="button"
                   data-toggle="dropdown"
                   aria-haspopup="true"
-                  aria-expanded="false"
-                >
+                  aria-expanded="false" >
                   <i class="far fa-file-alt"></i>
                   <span> Reports <i class="fas fa-angle-down"></i> </span>
                 </a>
@@ -74,7 +107,6 @@
                 </a>
               </li>
 
-             
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -83,8 +115,7 @@
                   role="button"
                   data-toggle="dropdown"
                   aria-haspopup="true"
-                  aria-expanded="false"
-                >
+                  aria-expanded="false" >
                   <i class="fas fa-cog"></i>
                   <span> Expiry Status <i class="fas fa-angle-down"></i> </span>
                 </a>
@@ -163,42 +194,3 @@
     <!-- https://getbootstrap.com/ -->
   </body>
 </html>
-<?php
-// error_reporting(E_ALL); 
-// ini_set('display_errors', 1);
-session_start();
-$message = "";
-include('dashboard.php');
-
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-
-    try {
-        $sql = "SELECT * FROM adminlogin WHERE username = ?";
-        $stmt = $conn->prepare($sql);
-        $stmt->bind_param("s", $username);
-        $stmt->execute();
-        $result = $stmt->get_result();
-
-        if ($result->num_rows > 0) {
-            $row = $result->fetch_assoc();
-            if ($password) {
-                $_SESSION['username'] = $username;
-                $message="login successfull";
-                header("Location: index.html");
-                exit;
-            } else {
-                $message = "Invalid password.";
-            }
-        } else {
-            $message = "Invalid username.";
-        }
-        // $stmt->close;
-     } catch (mysqli_sql_exception $e) {
-        $message = "Error: Could not perform the login operation. Please try again.";
-     }
-}
-$conn->close();
-?>
