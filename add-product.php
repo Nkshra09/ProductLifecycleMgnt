@@ -46,7 +46,7 @@
           <ul class="navbar-nav mx-auto h-100">
             <li class="nav-item">
               <a class="nav-link" href="index.php">
-                <i class="fas fa-tachometer-alt"></i> Dashboard
+                <i class="fas fa-tachometer-alt"></i> Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
@@ -139,9 +139,9 @@
                       id="category"
                     >
                       <option selected>Select category</option>
-                      <option value="1">New Arrival</option>
-                      <option value="2">Most Popular</option>
-                      <option value="3">Trending</option>
+                      <option value="New Arrival">New Arrival</option>
+                      <option value="Most Popular">Most Popular</option>
+                      <option value="Trending">Trending</option>
                     </select>
                   </div>
 			 <div class="form-group mb-3">
@@ -242,7 +242,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Prepare an SQL statement to insert data
     $stmt = $conn->prepare("INSERT INTO product1 (pname, category, quantity, DateOfMFG, DateOfExp) VALUES (?, ?, ?, ?, ?)");
-    $stmt->bind_param("ssssi", $productName, $category, $quantity, $dateOfMFG, $dateOfExp);
+     $stmt->bind_param("ssiss", $productName, $category, $quantity, $dateOfMFG, $dateOfExp);
 
     // Execute the statement
     if ($stmt->execute()) {
