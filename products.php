@@ -122,45 +122,38 @@
                         <table class="table tm-table-small tm-product-table">
                             <tbody>
                                 <tr>
-                                    <td class="tm-product-name">Product Category 1</td>
+                                    <td class="tm-product-name">Food and Beverages</td>
                                     <td class="text-center">
                                         <a href="#" class="tm-product-delete-link">
                                             <i class="far fa-trash-alt tm-product-delete-icon"></i>
                                         </a>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td class="tm-product-name">Product Category 2</td>
+                                 <tr>
+                                    <td class="tm-product-name">Pharmaceuticals</td>
                                     <td class="text-center">
                                         <a href="#" class="tm-product-delete-link">
                                             <i class="far fa-trash-alt tm-product-delete-icon"></i>
                                         </a>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td class="tm-product-name">Product Category 3</td>
+                                 <tr>
+                                    <td class="tm-product-name">Cosmetics</td>
                                     <td class="text-center">
                                         <a href="#" class="tm-product-delete-link">
                                             <i class="far fa-trash-alt tm-product-delete-icon"></i>
                                         </a>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td class="tm-product-name">Product Category 4</td>
+                                 <tr>
+                                    <td class="tm-product-name">Cleaning Supplies</td>
                                     <td class="text-center">
                                         <a href="#" class="tm-product-delete-link">
                                             <i class="far fa-trash-alt tm-product-delete-icon"></i>
                                         </a>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td class="tm-product-name">Product Category 5</td>
-                                    <td class="text-center">
-                                        <a href="#" class="tm-product-delete-link">
-                                            <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                                        </a>
-                                    </td>
-                                </tr>
+                                
                             </tbody>
                         </table>
                     </div>
