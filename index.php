@@ -51,7 +51,7 @@
                                 </span>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Daily Report</a>
+                                <a class="dropdown-item" href="/ProductLifecycleMgnt/yearly-sales-chart.html">Daily Report</a>
                                 <a class="dropdown-item" href="#">Weekly Report</a>
                                 <a class="dropdown-item" href="#">Yearly Report</a>
                             </div>
