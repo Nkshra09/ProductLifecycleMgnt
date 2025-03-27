@@ -23,10 +23,10 @@
     <div style="width: 80%; margin: auto;">
         <canvas id="salesChart"></canvas>
     </div>
-    <?php include 'yearly-sales-chart.php'; ?>
+<!--     <?php include 'yearly-sales-chart.php'; ?> -->
     <script>
         // Fetch yearly sales data
-        fetch('http://localhost/get-yearly-sales.php') // Make sure this points to your backend JSON endpoint
+        fetch('http://localhost/get-yearly-chart.php') // Make sure this points to your backend JSON endpoint
             .then(response => response.json())
             .then(data => {
                 // Extract years and total sales from the data
