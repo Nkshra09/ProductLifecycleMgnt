@@ -77,7 +77,8 @@
                                 <tr>
                                     <th scope="col"></th>  
                                     <th scope="col">PRODUCT NAME</th>
-                                    <th scope="col">UNIT SOLD</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Qty Added</th>
                                     <th scope="col">IN STOCK</th>
                                     <th scope="col">Date Of MFG</th>
                                     <th scope="col">EXPIRE DATE</th>
@@ -96,6 +97,7 @@
                                         echo "<th scope='row'><input type='checkbox' /></th>";
                                         echo "<td class='tm-product-name'>" . htmlspecialchars($row["pname"]) . "</td>";
                                         echo "<td>" . htmlspecialchars($row["price"]) . "</td>";
+                                        echo "<td>" . htmlspecialchars($row["quantity"]) . "</td>";
                                         echo "<td>" . htmlspecialchars($row["quantity"]) . "</td>";
                                         echo "<td>" . htmlspecialchars($row["DateOfMFG"]) . "</td>";
                                         echo "<td>" . htmlspecialchars($row["DateOfExp"]) . "</td>";
