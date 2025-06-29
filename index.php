@@ -120,20 +120,30 @@
                     </div>
                 </div> -->
 		<div class="row d-flex flex-wrap">
+<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-block-col">
+  <div class="tm-bg-primary-dark tm-block tm-block-taller">
+    <h2 class="tm-block-title">Storage Information</h2>
+    <div id="pieChartContainer">
+      <canvas id="pieChart" class="chartjs-render-monitor" width="200" height="200"></canvas>
+    </div>
+	  </div>
+</div>
+
+			
 <!--                 <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-block-col">
                     <div class="tm-bg-primary-dark tm-block">
                         <h2 class="tm-block-title">Performance</h2>
                         <canvas id="barChart"></canvas>
                     </div>
-                </div> -->
-<!--                 <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-block-col">
+                </div>  -->
+             <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-block-col">
                     <div class="tm-bg-primary-dark tm-block tm-block-taller">
                         <h2 class="tm-block-title">Storage Information</h2>
                         <div id="pieChartContainer">
                             <canvas id="pieChart" class="chartjs-render-monitor" width="200" height="200"></canvas>
                         </div>                        
-                    </div> -->
-			<div class="tm-block-col">
+                    </div>
+<!-- 			<div class="tm-block-col">
   <div class="tm-bg-primary-dark tm-block">
     <h2 class="tm-block-title">Product Category Overview</h2>
 <?php include 'chartp.php'; ?>
@@ -155,7 +165,7 @@
     <canvas id="productChart" height="250"></canvas>
   </div>
 </div>
-                </div>
+                </div> -->
 <!-- 			<div class="tm-block-col">
   <div class="tm-bg-primary-dark tm-block">
     <h2 class="tm-block-title">Product Category Overview</h2>
