@@ -13,10 +13,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $dateOfMFG = $_POST['DateOfMFG'];
     $dateOfExp = $_POST['DateOfExp'];
     $quantity = $_POST['quantity'];
-
+    $price=$_POST['price'];
     // Prepare an SQL statement to insert data
-    $stmt = $conn->prepare("INSERT INTO product1 (pname, category, quantity, DateOfMFG, DateOfExp) VALUES (?, ?, ?, ?, ?)");
-     $stmt->bind_param("ssiss", $productName, $category, $quantity, $dateOfMFG, $dateOfExp);
+    $stmt = $conn->prepare("INSERT INTO product1 (pname, category, quantity,price, DateOfMFG, DateOfExp) VALUES (?, ?, ?, ?, ?,?)");
+     $stmt->bind_param("ssiiss", $productName, $category, $quantity,$price, $dateOfMFG, $dateOfExp);
 
     // Execute the statement
     if ($stmt->execute()) {
