@@ -69,7 +69,7 @@
     </nav>
     <div class="container mt-5">
         <div class="row tm-content-row">
-            <div class="col-lg-8 col-lg-8 col-lg-8 col-lg-8 col-xl-8 tm-block-col">
+            <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8  tm-block-col">
                 <div class="tm-bg-primary-dark tm-block tm-block-products">
                     <div class="tm-product-table-container">
                         <table class="table table-hover tm-table-small tm-product-table">
@@ -79,7 +79,6 @@
                                     <th scope="col">PRODUCT NAME</th>
                                     <th scope="col">Price</th>
                                     <th scope="col">Qty Added</th>
-                                    <th scope="col">IN STOCK</th>
                                     <th scope="col">Date Of MFG</th>
                                     <th scope="col">EXPIRE DATE</th>
                                     <th scope="col"></th>  
@@ -98,7 +97,7 @@
                                         echo "<td class='tm-product-name'>" . htmlspecialchars($row["pname"]) . "</td>";
                                         echo "<td>" . htmlspecialchars($row["price"]) . "</td>";
                                         echo "<td>" . htmlspecialchars($row["quantity"]) . "</td>";
-                                        echo "<td>" . htmlspecialchars($row["quantity"]) . "</td>";
+                                        // echo "<td>" . htmlspecialchars($row["quantity"]) . "</td>";
                                         echo "<td>" . htmlspecialchars($row["DateOfMFG"]) . "</td>";
                                         echo "<td>" . htmlspecialchars($row["DateOfExp"]) . "</td>";
                                        echo "<td><a href='delete-product.php?pid=" . htmlspecialchars($row['pid']) . "' class='tm-product-delete-link' 
