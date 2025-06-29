@@ -269,7 +269,7 @@
             </div>
         </footer>
     </div>
-	<script>
+<!-- 	<script>
 var ctx = document.getElementById('productChart').getContext('2d');
 new Chart(ctx, {
   type: 'pie',
@@ -289,8 +289,32 @@ new Chart(ctx, {
     }
   }
 });
+</script> -->
+<script>
+const ctx = document.getElementById('productChart').getContext('2d');
+new Chart(ctx, {
+  type: 'pie',
+  data: {
+    labels: <?= json_encode($labels); ?>,
+    datasets: [{
+      data: <?= json_encode($data); ?>,
+      backgroundColor: [
+        '#F94144', '#F3722C', '#F9C74F',
+        '#90BE6D', '#43AA8B', '#577590',
+        '#A569BD', '#2ECC71', '#E67E22'
+      ]
+    }]
+  },
+  options: {
+    responsive: true,
+    legend: { position: 'bottom' },
+    title: {
+      display: true,
+      text: 'Products in <?= $selectedCategory ?>'
+    }
+  }
+});
 </script>
-
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
