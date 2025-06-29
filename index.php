@@ -138,9 +138,7 @@
 	     </div>
 		</div>
 			
-  <div class="tm-bg-primary-dark tm-block">
-    <h2 class="tm-block-title">Product Category Overview</h2>
-
+ 
 		</div>
                 <div class="col-12 tm-block-col">
                     <div class="tm-bg-primary-dark tm-block tm-block-taller tm-block-scroll">
