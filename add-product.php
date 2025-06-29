@@ -174,9 +174,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                       id="category"
                     >
                       <option selected>Select category</option>
-                      <option value="New Arrival">New Arrival</option>
-                      <option value="Most Popular">Most Popular</option>
-                      <option value="Trending">Trending</option>
+                      <option value="Pharmaceuticals">Pharmaceuticals</option>
+                      <option value="Food and Beverages">Food and Beveragesr</option>
+                      <option value="Cosmetics">Cosmetics</option>
+		      <option value="Cleaning Supplies">Cleaning Supplies</option>
                     </select>
                   </div>
 <!-- 			 <div class="form-group mb-3">
