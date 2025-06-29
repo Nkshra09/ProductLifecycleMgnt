@@ -94,7 +94,7 @@
          <tbody>
               <?php
                 include 'dashboard.php';
-               $sql = "SELECT * FROM product1";
+               $sql = "SELECT * FROM product";
               $result = $conn->query($sql);
 
                if ($result->num_rows > 0) {
