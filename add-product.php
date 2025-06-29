@@ -206,7 +206,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <div class="form-group mb-3 col-xs-12 col-sm-6">
                           <label
                             for="stock"
-                            >Units In Stock
+                            >Quantity
                           </label>
                           <input
                             id="stock"
@@ -226,7 +226,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                           </label>
                           <input
                             id="expire_date"
-                            name="DateOfMfg"
+                            name="DateOfMFG"
                             type="date"
                             class="form-control validate"
                             data-large-mode="true"
