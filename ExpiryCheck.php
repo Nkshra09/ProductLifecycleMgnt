@@ -85,8 +85,8 @@
             <thead>
                 <tr>
                     <th>Product Name</th>
-                    <th>Unit Sold</th>
-                    <th>In Stock</th>
+                    <th>Qty</th>
+                    <th>Price</th>
                     <th>Date Of MFG</th>
                     <th>Expire Date</th>
                 </tr>
@@ -102,8 +102,8 @@
                      $isExpired = (new DateTime($row['DateOfExp']) < new DateTime()) ? "Expired" : "Valid";
                         echo "<tr data-expiry='" . htmlspecialchars($row["DateOfExp"]) . "'>";
                         echo "<td>" . htmlspecialchars($row["pname"]) . "</td>";
-                        echo "<td>" . htmlspecialchars($row["price"]) . "</td>";
                         echo "<td>" . htmlspecialchars($row["quantity"]) . "</td>";
+                        echo "<td>" . htmlspecialchars($row["price"]) . "</td>";
                         echo "<td>" . htmlspecialchars($row["DateOfMFG"]) . "</td>";
                         echo "<td>" . htmlspecialchars($row["DateOfExp"]) . " <span class='highlight'>($isExpired)</span></td>";
                         echo "</tr>";
