@@ -217,7 +217,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                           />
                         </div>
                   </div>
-                  <div class="row"> //second one
+                  <div class="row"> 
+<!-- 			  second one -->
                       <div class="form-group mb-3 col-xs-12 col-sm-6">
                           <label
                             for="expire_date"
