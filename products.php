@@ -69,7 +69,7 @@
     </nav>
     <div class="container mt-5">
         <div class="row tm-content-row">
-            <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8 tm-block-col">
+            <div class="col-lg-8 col-lg-8 col-lg-8 col-lg-8 col-xl-8 tm-block-col">
                 <div class="tm-bg-primary-dark tm-block tm-block-products">
                     <div class="tm-product-table-container">
                         <table class="table table-hover tm-table-small tm-product-table">
