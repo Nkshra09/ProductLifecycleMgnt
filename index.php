@@ -160,7 +160,14 @@
     </form>
 
     <!-- Chart Canvas -->
-    <canvas id="productChart" height="250"></canvas>
+	   <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-block-col">
+                    <div class="tm-bg-primary-dark tm-block tm-block-taller">
+<!--                         <h2 class="tm-block-title">Storage Information</h2> -->
+                        <div id="pieChartContainer">
+                             <canvas id="productChart" height="250"></canvas>
+                        </div>                        
+                    </div> 
+<!--     <canvas id="productChart" height="250"></canvas> -->
   </div>
 </div>
                 </div>
