@@ -15,7 +15,7 @@
     <!-- https://getbootstrap.com/ -->
     <link rel="stylesheet" href="/ProductLifecycleMgnt/templatemo-style.css">
 	
-    <style>
+<!--     <style>
   .tm-block-title {
     color: white;
     font-size: 1.25rem;
@@ -33,7 +33,7 @@
     color: white;
   }
 </style>
-	
+	 -->
     <!--
 	Product Admin CSS Template
 	https://templatemo.com/tm-524-product-admin
@@ -120,22 +120,14 @@
                     </div>
                 </div> -->
 		<div class="row d-flex flex-wrap">
-<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-block-col">
-  <div class="tm-bg-primary-dark tm-block tm-block-taller">
-    <h2 class="tm-block-title">Storage Information</h2>
-    <div id="pieChartContainer">
-      <canvas id="pieChart" class="chartjs-render-monitor" width="200" height="200"></canvas>
-    </div>
-	  </div>
-</div>
 
 			
-<!--                 <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-block-col">
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-block-col">
                     <div class="tm-bg-primary-dark tm-block">
                         <h2 class="tm-block-title">Performance</h2>
                         <canvas id="barChart"></canvas>
                     </div>
-                </div>  -->
+                </div> 
              <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-block-col">
                     <div class="tm-bg-primary-dark tm-block tm-block-taller">
                         <h2 class="tm-block-title">Storage Information</h2>
@@ -143,40 +135,11 @@
                             <canvas id="pieChart" class="chartjs-render-monitor" width="200" height="200"></canvas>
                         </div>                        
                     </div>
-<!-- 			<div class="tm-block-col">
+	     </div>
+		</div>
+			
   <div class="tm-bg-primary-dark tm-block">
     <h2 class="tm-block-title">Product Category Overview</h2>
-<?php include 'chartp.php'; ?>
-
-    <!-- Category Dropdown -->
-    <form method="GET" class="mb-3">
-      <select name="category" class="form-control" onchange="this.form.submit()">
-        <option value="All">All</option>
-        <?php foreach ($categories as $cat): ?>
-          <option value="<?= $cat ?>" <?= ($selectedCategory === $cat) ? 'selected' : '' ?>>
-            <?= htmlspecialchars($cat) ?>
-          </option>
-        <?php endforeach; ?>
-      </select>
-    </form>
-
-    <!-- Chart Canvas -->
-	   
-    <canvas id="productChart" height="250"></canvas>
-  </div>
-</div>
-                </div> -->
-<!-- 			<div class="tm-block-col">
-  <div class="tm-bg-primary-dark tm-block">
-    <h2 class="tm-block-title">Product Category Overview</h2>
-
-
-    <!-- Chart Canvas -->
-    <canvas id="productChart" height="250"></canvas>
-  </div>
-</div> 
-
-
 
 		</div>
                 <div class="col-12 tm-block-col">
