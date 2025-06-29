@@ -14,6 +14,24 @@
     <link rel="stylesheet" href="/ProductLifecycleMgnt/bootstrap.min.css">
     <!-- https://getbootstrap.com/ -->
     <link rel="stylesheet" href="/ProductLifecycleMgnt/templatemo-style.css">
+    <style>
+  .tm-block-title {
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  select.form-control {
+    background-color: #1f2d3d;
+    color: #ffffff;
+    border: 1px solid #ccc;
+  }
+
+  option {
+    background-color: #1f2d3d;
+    color: #ffffff;
+  }
+</style>
 	
     <!--
 	Product Admin CSS Template
@@ -169,7 +187,7 @@
   <div class="tm-bg-primary-dark tm-block">
     <h2 class="tm-block-title">Product Category Overview</h2>
 
-    <!-- Category Filter -->
+<!--     <!-- Category Filter -->
     <form method="GET" class="mb-3">
       <select name="category" onchange="this.form.submit()" class="form-control">
         <option value="All">All</option>
@@ -180,7 +198,7 @@
         <?php endforeach; ?>
       </select>
     </form>
-
+ -->
     <!-- Chart Canvas -->
     <canvas id="productChart" height="250"></canvas>
   </div>
