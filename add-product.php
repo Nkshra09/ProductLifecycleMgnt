@@ -179,7 +179,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                       <option value="Trending">Trending</option>
                     </select>
                   </div>
-			 <div class="form-group mb-3">
+<!-- 			 <div class="form-group mb-3">
                     <label for="dateofmfg">DateOfMFG</label >
 		    <input
                             id="expire_date"
@@ -188,17 +188,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             class="form-control validate"
                             data-large-mode="true"
                           />
-                  </div>
-                  <div class="row">
+                  </div> -->
+			 <div class="row">
                       <div class="form-group mb-3 col-xs-12 col-sm-6">
                           <label
-                            for="expire_date"
-                            >Expire Date
+                            for="price"
+                            >Price
                           </label>
                           <input
-                            id="expire_date"
-                            name="DateOfExp"
-                            type="date"
+                            id="price"
+                            name="price"
+                            type="text"
                             class="form-control validate"
                             data-large-mode="true"
                           />
@@ -212,6 +212,34 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             id="stock"
                             name="quantity"
                             type="text"
+                            class="form-control validate"
+                            required
+                          />
+                        </div>
+                  </div>
+                  <div class="row"> //second one
+                      <div class="form-group mb-3 col-xs-12 col-sm-6">
+                          <label
+                            for="expire_date"
+                            >DateOfMFG
+                          </label>
+                          <input
+                            id="expire_date"
+                            name="DateOfMfg"
+                            type="date"
+                            class="form-control validate"
+                            data-large-mode="true"
+                          />
+                        </div>
+                        <div class="form-group mb-3 col-xs-12 col-sm-6">
+                          <label
+                            for="doe"
+                            >Date Of Exp
+                          </label>
+                          <input
+                            id="doe"
+                            name="DateOfExp"
+                            type="date"
                             class="form-control validate"
                             required
                           />
