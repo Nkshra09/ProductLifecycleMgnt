@@ -277,7 +277,7 @@ new Chart(ctx, {
   }
 });
 </script>
-<!--     <script>
+    <script>
         Chart.defaults.global.defaultFontColor = 'white';
         let ctxLine,
             ctxBar,
@@ -301,7 +301,7 @@ new Chart(ctx, {
                 updateBarChart();                
             });
         })
-    </script> -->
+    </script>
 </body>
 
 </html>
