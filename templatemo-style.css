@@ -469,6 +469,7 @@ input[type="checkbox"]:focus {
   max-height: 465px;
   margin-bottom: 15px;
   overflow-y: scroll;
+  overflow-x: auto; /* Add this line */Added later 
 }
 .tm-product-table tr {
   font-weight: 600;
