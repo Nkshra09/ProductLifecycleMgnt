@@ -160,14 +160,8 @@
     </form>
 
     <!-- Chart Canvas -->
-	   <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-block-col">
-                    <div class="tm-bg-primary-dark tm-block tm-block-taller">
-<!--                         <h2 class="tm-block-title">Storage Information</h2> -->
-                        <div id="pieChartContainer">
-                             <canvas id="productChart" height="250"></canvas>
-                        </div>                        
-                    </div> 
-<!--     <canvas id="productChart" height="250"></canvas> -->
+	   
+    <canvas id="productChart" height="250"></canvas>
   </div>
 </div>
                 </div>
@@ -298,6 +292,13 @@ new Chart(ctx, {
   }
 });
 </script> -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="/ProductLifecycleMgnt/tooplate-scripts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
 <script>
 const ctx = document.getElementById('productChart').getContext('2d');
 new Chart(ctx, {
@@ -323,13 +324,6 @@ new Chart(ctx, {
   }
 });
 </script>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="/ProductLifecycleMgnt/tooplate-scripts.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
-
 <!--     <script>
         Chart.defaults.global.defaultFontColor = 'white';
         let ctxLine,
