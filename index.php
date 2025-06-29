@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/ProductLifecycleMgnt/bootstrap.min.css">
     <!-- https://getbootstrap.com/ -->
     <link rel="stylesheet" href="/ProductLifecycleMgnt/templatemo-style.css">
+	
     <!--
 	Product Admin CSS Template
 	https://templatemo.com/tm-524-product-admin
@@ -320,6 +321,8 @@ new Chart(ctx, {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="/ProductLifecycleMgnt/tooplate-scripts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+
 <!--     <script>
         Chart.defaults.global.defaultFontColor = 'white';
         let ctxLine,
