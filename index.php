@@ -119,9 +119,57 @@
                         <canvas id="lineChart"></canvas>
                     </div>
                 </div> -->
-		<div class="row d-flex flex-wrap">
+		<div class="row d-flex flex-wrap"> <!-- flexbox side for chart  -->
+			<div class="tm-bg-primary-dark tm-block tm-block-taller">
+  <h2 class="tm-block-title">Storage Information</h2>
 
-			
+  <div class="d-flex justify-content-between" style="flex-wrap: wrap; gap: 20px;">
+    <!-- First Chart -->
+    <div style="flex: 1 1 45%; text-align: center;">
+      <h5 style="color: #fff;">Product Quantity</h5>
+      <canvas id="productPie" width="180" height="180"></canvas>
+    </div>
+
+    <!-- Second Chart -->
+    <div style="flex: 1 1 45%; text-align: center;">
+      <h5 style="color: #fff;">Expired Products</h5>
+      <canvas id="expiryPie" width="180" height="180"></canvas>
+    </div>
+  </div>
+
+  <!-- ✅ Paste the <script> right here -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const productCtx = document.getElementById("productPie").getContext("2d");
+      const expiryCtx = document.getElementById("expiryPie").getContext("2d");
+
+      new Chart(productCtx, {
+        type: "pie",
+        data: {
+          labels: <?= json_encode($catLabels) ?>,
+          datasets: [{
+            data: <?= json_encode($catData) ?>,
+            backgroundColor: ["#FF6384", "#36A2EB", "#FFCE56", "#4BC0C0"]
+          }]
+        },
+        options: { responsive: true, legend: { position: "bottom" } }
+      });
+
+      new Chart(expiryCtx, {
+        type: "pie",
+        data: {
+          labels: <?= json_encode($expLabels) ?>,
+          datasets: [{
+            data: <?= json_encode($expData) ?>,
+            backgroundColor: ["#F94144", "#90BE6D", "#577590", "#F3722C"]
+          }]
+        },
+        options: { responsive: true, legend: { position: "bottom" } }
+      });
+    });
+  </script>
+</div>
+
                 <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-block-col">
                     <div class="tm-bg-primary-dark tm-block">
                         <h2 class="tm-block-title">Performance</h2>
@@ -136,6 +184,7 @@
                         </div>                        
                     </div>
 	     </div>
+			
 		</div>
 			
  
