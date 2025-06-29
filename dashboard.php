@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "ProductDB"; // Replace with your actual database name
+$dbname = "productdb"; // Replace with your actual database name
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -11,6 +11,6 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-// $mysqli->select_db("ProductDB");
+// $mysqli->select_db("prodcutdb");
 
 ?>
