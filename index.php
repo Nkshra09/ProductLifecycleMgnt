@@ -106,14 +106,37 @@
                         <canvas id="barChart"></canvas>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-block-col">
+<!--                 <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-block-col">
                     <div class="tm-bg-primary-dark tm-block tm-block-taller">
                         <h2 class="tm-block-title">Storage Information</h2>
                         <div id="pieChartContainer">
                             <canvas id="pieChart" class="chartjs-render-monitor" width="200" height="200"></canvas>
                         </div>                        
-                    </div>
+                    </div> -->
                 </div>
+			<div class="tm-block-col">
+  <div class="tm-bg-primary-dark tm-block">
+    <h2 class="tm-block-title">Product Category Overview</h2>
+
+    <!-- Category Filter -->
+    <form method="GET" class="mb-3">
+      <select name="category" onchange="this.form.submit()" class="form-control">
+        <option value="All">All</option>
+        <?php foreach ($categories as $cat): ?>
+          <option value="<?= $cat ?>" <?= $selectedCategory === $cat ? 'selected' : '' ?>>
+            <?= $cat ?>
+          </option>
+        <?php endforeach; ?>
+      </select>
+    </form>
+
+    <!-- Chart Canvas -->
+    <canvas id="productChart" height="250"></canvas>
+  </div>
+</div>
+
+
+
 		</div>
                 <div class="col-12 tm-block-col">
                     <div class="tm-bg-primary-dark tm-block tm-block-taller tm-block-scroll">
@@ -197,13 +220,34 @@
             </div>
         </footer>
     </div>
+	<script>
+var ctx = document.getElementById('productChart').getContext('2d');
+new Chart(ctx, {
+  type: 'pie',
+  data: {
+    labels: <?= json_encode($labels); ?>,
+    datasets: [{
+      data: <?= json_encode($data); ?>,
+      backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#8BC34A', '#E91E63', '#3F51B5']
+    }]
+  },
+  options: {
+    responsive: true,
+    legend: { position: 'bottom' },
+    title: {
+      display: true,
+      text: 'Products in <?= $selectedCategory ?>'
+    }
+  }
+});
+</script>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="/ProductLifecycleMgnt/tooplate-scripts.js"></script>
-    <script>
+<!--     <script>
         Chart.defaults.global.defaultFontColor = 'white';
         let ctxLine,
             ctxBar,
@@ -227,7 +271,7 @@
                 updateBarChart();                
             });
         })
-    </script>
+    </script> -->
 </body>
 
 </html>
