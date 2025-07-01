@@ -1,5 +1,5 @@
 <?php
-session_start();
+// session_start();
 $message = "";
 include('dashboard.php');
 
