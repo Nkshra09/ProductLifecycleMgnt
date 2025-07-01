@@ -6,6 +6,11 @@ https://templatemo.com/tm-524-product-admin
 
 */
 
+.disabled-link {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
 html {
   font-size: 16px;
   overflow-x: hidden;
