@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
     $password = $_POST['password'];
     try {
-        $sql = "SELECT * FROM adminlogin WHERE username = ?";
+        $sql = "SELECT * FROM adminlogin1 WHERE username = ?";
         $stmt = $conn->prepare($sql);
         $stmt->bind_param("s", $username);
         $stmt->execute();
@@ -37,6 +37,7 @@ $conn->close();
 <!DOCTYPE html>
 <html lang="en">
   <head>
+  <?php session_start(); ?>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -83,44 +84,50 @@ $conn->close();
                   <span class="sr-only">(current)</span>
                 </a>
               </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false" >
-                  <i class="far fa-file-alt"></i>
-                  <span> Reports <i class="fas fa-angle-down"></i> </span>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Daily Report</a>
-                  <a class="dropdown-item" href="#">Weekly Report</a>
-                  <a class="dropdown-item" href="#">Yearly Report</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="products.php">
-                  <i class="fas fa-shopping-cart"></i> Products
-                </a>
-              </li>
+              <!-- Reports Link -->
+<li class="nav-item dropdown">
+  <a
+    class="nav-link dropdown-toggle <?php echo !isset($_SESSION['username']) ? 'disabled-link' : ''; ?>"
+    href="#"
+    id="navbarDropdown"
+    role="button"
+    data-toggle="dropdown"
+    aria-haspopup="true"
+    aria-expanded="false">
+    <i class="far fa-file-alt"></i>
+    <span> Reports <i class="fas fa-angle-down"></i> </span>
+  </a>
+  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+    <a class="dropdown-item" href="#">Daily Report</a>
+    <a class="dropdown-item" href="#">Weekly Report</a>
+    <a class="dropdown-item" href="#">Yearly Report</a>
+  </div>
+</li>
 
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="ExpiryCheck.php"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false" >
-                  <i class="fas fa-cog"></i>
-                  <span> Expiry Status <i class="fas fa-angle-down"></i> </span>
-                </a>
-                
-              </li>
+<!-- Products -->
+<li class="nav-item">
+  <a
+    class="nav-link <?php echo !isset($_SESSION['username']) ? 'disabled-link' : ''; ?>"
+    href="products.php">
+    <i class="fas fa-shopping-cart"></i> Products
+  </a>
+</li>
+
+<!-- Expiry Status -->
+<li class="nav-item dropdown">
+  <a
+    class="nav-link dropdown-toggle <?php echo !isset($_SESSION['username']) ? 'disabled-link' : ''; ?>"
+    href="ExpiryCheck.php"
+    id="navbarDropdown"
+    role="button"
+    data-toggle="dropdown"
+    aria-haspopup="true"
+    aria-expanded="false">
+    <i class="fas fa-cog"></i>
+    <span> Expiry Status <i class="fas fa-angle-down"></i> </span>
+  </a>
+</li>
+
             </ul>
           </div>
         </div>
