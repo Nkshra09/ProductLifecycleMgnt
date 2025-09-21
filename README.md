@@ -37,10 +37,6 @@ Managing product inventory and ensuring timely removal of expired items is cruci
 
 
 
-
-
-
-
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/product-lifecycle-management.git
+   git clone https://github.com/NKshra09/ProductLifecycleMgnt.git
